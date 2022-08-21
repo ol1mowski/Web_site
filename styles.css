@@ -1,6 +1,8 @@
 :root {
     --blue: #000ff0;
+    --green: #008000;
     --dark: #1b1b1b;
+    --white: #fff;
 }
 
 * {
@@ -80,7 +82,7 @@ p {
 }
 
 a {
-    color: var(--blue);
+    color: var(--green);
     text-decoration: none;
     position: relative;
 }
@@ -92,8 +94,7 @@ a:after {
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--blue);
-    background: linear-gradient(90deg, transparent, var(--green));
+    background: linear-gradient(90deg, transparent, var(--white));
     transition: width 0.3s;
 }
 
