@@ -1,5 +1,5 @@
 :root {
-    --green: #38ccae;
+    --blue: #000ff0;
     --dark: #1b1b1b;
 }
 
@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--green);
-    background: linear-gradient(to right top, var(--dark), var(--green));
+    background: linear-gradient(to right top, var(--dark), var(--blue));
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
@@ -80,7 +80,7 @@ p {
 }
 
 a {
-    color: var(--green);
+    color: var(--blue);
     text-decoration: none;
     position: relative;
 }
@@ -92,7 +92,7 @@ a:after {
     position: absolute;
     top: 100%;
     left: 0;
-    background: var(--green);
+    background: var(--blue);
     background: linear-gradient(90deg, transparent, var(--green));
     transition: width 0.3s;
 }
@@ -143,7 +143,7 @@ section:first-child {
     text-align: center;
     font-size: 32px;
     font-weight: 700;
-    background: linear-gradient(90deg, var(--green), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(90deg, var(--blue), rgba(255, 255, 255, 0.8));
     color: #fff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -165,8 +165,8 @@ button {
     font-size: 42px;
     font-weight: 700;
     color: #fff;
-    background: var(--green);
-    background: linear-gradient(to right top, var(--green), rgba(255, 255, 255, 0.6));
+    background: var(--blue);
+    background: linear-gradient(to right top, var(--blue), rgba(255, 255, 255, 0.6));
     border: none;
     position: relative;
     cursor: pointer;
@@ -193,13 +193,20 @@ button:hover:after {
     transform: translateX(500px) rotate(20deg);
 }
 
-
 @keyframes slideDown {
-    from {transform: translateY(-30vh)}
-    to {transform: translateY(100vh)}
+    from {
+        transform: translateY(-30vh)
+    }
+    to {
+        transform: translateY(100vh)
+    }
 }
 
 @keyframes rotate {
-    from {transform: rotate(0deg)}
-    to {transform: rotate(360deg)}
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
