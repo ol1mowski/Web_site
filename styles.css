@@ -25,8 +25,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    max-height: 80vh;
+    max-width: 920px;
+    height: 66%;
     display: flex;
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.75);
@@ -37,6 +37,28 @@ body {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     overflow: auto;
+    transition: all 0.3s;
+}
+
+.con {
+    max-width: 920px;
+    height: 66%;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.75);
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    padding: 32px 92px;
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    overflow: auto;
+    transition: all 0.3s;
+}
+
+.con:hover {
+    height: 70%;
+    box-shadow: 0px, 8px, 24px, 0 rgba(228, 52, 52, 0.25);
 }
 
 .bg__img {
@@ -111,6 +133,11 @@ a:hover:after {
     width: 100%;
 }
 
+#f {
+    width: 40%;
+    height: 5%;
+}
+
 main {
     display: flex;
 }
@@ -159,6 +186,24 @@ section:first-child {
     transform: translate(10px, -30px);
 }
 
+.mail {
+    color: #fff;
+}
+
+input {
+    background: linear-gradient( to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 24px;
+    outline: transparent;
+    overflow: hidden;
+    position: relative;
+    transition: background 0.3s ease-out, box-shadow 0.3s ease-out, color 0.3s ease-out, outline 0.3s ease-out;
+}
+
 button {
     width: 350px;
     margin-top: 32px;
@@ -172,6 +217,25 @@ button {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+}
+
+.formul {
+    width: 44%;
+    height: 66%;
+    font-size: 36px;
+    padding: 32px 92px;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    margin-left: 20px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.formul:hover {
+    width: 66%;
+    height: 70%;
 }
 
 button:focus {
@@ -192,6 +256,26 @@ button:after {
 
 button:hover:after {
     transform: translateX(500px) rotate(20deg);
+}
+
+label {
+    display: block;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    opacity: 0.50;
+}
+
+textarea {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to left bottom, var(--dark), var(--blue));
+    font-size: 24px;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 @keyframes slideDown {
