@@ -25,14 +25,15 @@ body {
 }
 
 .container {
-    max-width: 920px;
+    max-width: 800px;
     height: 66%;
     display: flex;
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.75);
     background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-    padding: 32px 92px;
+    padding: 20px 92px;
     border-radius: 20px;
+    margin-right: 20px;
     position: relative;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -188,18 +189,19 @@ section:first-child {
 
 .mail {
     color: #fff;
+    overflow: auto;
 }
 
 #submit {
     background: linear-gradient( to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
     border: none;
-    width: 40%;
+    width: 100px;
     height: 30px;
     border-radius: 10px;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
     color: #fff;
     font-size: 24px;
-    margin-bottom: 24px;
+    display: block;
     outline: transparent;
     overflow: hidden;
     transition: all 0.6s;
@@ -208,7 +210,7 @@ section:first-child {
 }
 
 #submit:hover {
-    width: 50%;
+    width: 150px;
     color: #808080;
     height: 40px;
     box-shadow: 12px 8px 24px 12px rgba(0, 0, 0, 0.1);
@@ -217,13 +219,13 @@ section:first-child {
 input {
     background: linear-gradient( to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.25));
     border: none;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
     color: #fff;
     font-size: 24px;
     margin-bottom: 24px;
     outline: transparent;
-    overflow: hidden;
     position: relative;
     transition: background 0.3s ease-out, box-shadow 0.3s ease-out, color 0.3s ease-out, outline 0.3s ease-out;
 }
@@ -244,21 +246,26 @@ button {
 }
 
 .formul {
-    width: 25%;
-    height: 66%;
+    width: 35%;
+    height: 60%;
     font-size: 36px;
     padding: 32px 92px;
     font-family: Helvetica, sans-serif;
     display: flex;
+    overflow: auto;
     margin-left: 20px;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
     transition: all 0.3s;
 }
 
+form {
+    width: 75%;
+    height: 65%;
+}
+
 .formul:hover {
-    width: 30%;
+    width: 40%;
     height: 70%;
 }
 
@@ -284,6 +291,7 @@ button:hover:after {
 
 label {
     display: block;
+    width: 100%;
 }
 
 ::placeholder {
