@@ -292,7 +292,6 @@ button:hover:after {
 label {
     display: block;
     width: 100%;
-    font-size: 12px;
 }
 
 ::placeholder {
