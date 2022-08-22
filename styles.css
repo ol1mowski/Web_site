@@ -246,7 +246,7 @@ button {
 }
 
 .formul {
-    width: 35%;
+    width: 40%;
     height: 60%;
     font-size: 36px;
     padding: 32px 92px;
@@ -265,7 +265,7 @@ form {
 }
 
 .formul:hover {
-    width: 40%;
+    width: 45%;
     height: 70%;
 }
 
