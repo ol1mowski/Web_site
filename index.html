@@ -36,12 +36,14 @@
     </div>
     <div class="container formul">
         <section>
-            <form action="https://formsubmit.io/send/oliwierxden@gmail.com" method="POST">
-                <label for="mail">Twój e-mail</label><input type="email" id="mail" placeholder="np. JanKowalski@op.pl">
-                <label for="tresc">Wiadomość</label><textarea rows="10" , cols="50" placeholder="Miejsce na twoją wiadomość"></textarea>
-                <!--<input name="_redirect" type="hidden" id="name" value="https://your website url">-->
-                <button id="f">Wyślij</button>
+            <form id="contactform" action="https://formsubmit.io/send/oliwierxden@gmail.com" method="POST">
+                <label for="e-mail">Twój e-mail</label>
+                <input name="email" type="email" id="email" placeholder="np.Jan@kowalski.pl">
+                <textarea name="comment" id="comment" rows="3" placeholder="Wpisz swoją widomość"></textarea>
+
                 <input name="_formsubmit_id" type="text" style="display:none">
+
+                <input value="Prześlij" id="submit" type="submit">
             </form>
         </section>
     </div>
