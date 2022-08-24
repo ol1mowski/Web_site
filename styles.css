@@ -301,8 +301,8 @@ label {
 }
 
 #czas {
-    width: 5%;
-    margin-bottom: 43%;
+    width: 0;
+    margin-bottom: 800px;
     color: #fff;
     font-family: Helvetica, sans-serif;
     font-size: 45px;
