@@ -300,6 +300,14 @@ label {
     opacity: 0.50;
 }
 
+#czas {
+    width: 5%;
+    margin-bottom: 850px;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 45px;
+}
+
 textarea {
     border: none;
     border-radius: 15px;
