@@ -1,0 +1,35 @@
+{
+    „lang”: „PL”,
+    „dir”: „ltr”,
+    „name”: „Super Platform 2020”,
+    „description”: „Najlepsza gra platformowa w 2020 roku!”,
+    „short_name”: „SuperPlatform20”,
+    „icons”: [{
+       „src”: „icon/dolny.webp”,
+       „sizes”: „64×64”,
+       „type”: „image/webp”
+   },{
+    „src”: „icon/dolny.png”,
+    „sizes”: „64×64”
+   },{
+    „src”: „icon/hd_gora”,
+    „sizes”: „128×128”
+   }],
+    „scope”: „/platform/”,
+    „start_url”: „/platform/start.html”,
+    „display”: „fullscreen”,
+    „orientation”: „landscape”,
+    „theme_color”: „aliceblue”,
+    „background_color”: „red”,
+    „screenshots”: [{
+       „src”: „screenshots/w-grze-1x.jpg”,
+       „sizes”: „640×480”,
+       „type”: „image/jpeg”
+   },{
+    „src”: „screenshots/w-grze-2x.jpg”,
+    „sizes”: „1280×920”,
+    „type”: „image/jpeg”
+   }]
+  }
+  
+   
