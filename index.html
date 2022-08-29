@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="pl-PL">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Ol1mowski" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ol1mowski Webseite</title>
-    <meta name="description" content="Strona autorstwa OT-Group(R)" />
-    <link rel=”manifest” href=”manifest.json” />
-    <meta name=”theme-color” content=”#000ff0″>
     <link rel="stylesheet" href="./styles.css">
     <link rel="icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="./jquery-3.6.0.js"></script>
+    <script>
+        $(function() {
+            $('body').toggle('slow');
+        });
+    </script>
 </head>
 
-<body>
+<body style="display: none;">
     <div id="czas"></div>
     <div class="bg">
         <img src="button.png" alt="" class="bg__img bg__img--button">
@@ -23,7 +26,7 @@
     </div>
     <div class="container con">
         <header>
-            <h1>Dołącz do naszej Republiki</h1>
+            <h1>Treten Sie unserer Akademie bei</h1>
         </header>
         <main>
             <section>
@@ -42,13 +45,13 @@
     <div class="container formul">
         <form id="contactform" action="https://formsubmit.io/send/beautybeautyinfo26@gmail.com " method="POST">
             <input name="_redirect" type="hidden" id="name" value="https://ol1mowski.github.io/Thanks/">
-            <label for="">Wyślij Wiadomość</label>
+            <label for="">Schick mir eine Nachricht</label>
             <br />
             <label for="e-mail">e-mail</label>
-            <input name="email" type="email" id="email" placeholder="np.Jan@Kowalski.pl">
-            <label for="comment">Wiadomość</label>
-            <textarea name="comment" id="comment" rows="3" placeholder="Treść wiadomości"></textarea>
-            <input value="Wyślij" id="submit" type="submit">
+            <input name="email" type="email" id="email" placeholder="np.Klauss@Schmitz.de">
+            <label for="comment">Nachricht</label>
+            <textarea name="comment" id="comment" rows="3" placeholder="Gib deine Nachricht ein"></textarea>
+            <input value="Einreichen" id="submit" type="submit">
         </form>
     </div>
     <script src="./script.js"></script>
