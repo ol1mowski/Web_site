@@ -30,7 +30,7 @@ let sprawdz = (form) => {
         form.email.focus();
         return false;
     }
-    if (form.imie.value == '') {
+    if (form.comment.value == '') {
         alert("Treść nie może być pusta!");
         form.comment.focus();
         return false;
