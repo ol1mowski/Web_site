@@ -23,3 +23,16 @@ let pokazGodzine = () => {
 
 pokazGodzine();
 setInterval("pokazGodzine()", 1000);
+
+let sprawdz = (form) => {
+    if (form.email.value == '') {
+        alert("Pole email nie może być puste!");
+        form.email.focus();
+        return false;
+    }
+    if (form.imie.value == '') {
+        alert("Treść nie może być pusta!");
+        form.comment.focus();
+        return false;
+    }
+}
