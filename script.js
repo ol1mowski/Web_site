@@ -30,9 +30,9 @@ let sprawdz = (form) => {
         form.email.focus();
         return false;
     }
-    if (form.comment.value == '') {
+    if (form.name.value == '') {
         alert("Treść nie może być pusta!");
-        form.comment.focus();
+        form.name.focus();
         return false;
     }
 }
