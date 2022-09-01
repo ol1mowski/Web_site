@@ -231,7 +231,7 @@ input {
 }
 
 button {
-    width: 350px;
+    width: 250px;
     margin-top: 32px;
     padding: 16px 0;
     font-size: 42px;
@@ -246,7 +246,7 @@ button {
 }
 
 .formul {
-    width: 40%;
+    width: 30%;
     height: 65%;
     font-size: 36px;
     padding: 32px 92px;
@@ -262,10 +262,11 @@ button {
 form {
     width: 70%;
     height: 65%;
+    margin: auto;
 }
 
 .formul:hover {
-    width: 45%;
+    width: 35%;
     height: 75%;
 }
 
@@ -301,12 +302,12 @@ label {
 }
 
 #czas {
-    width: 0;
-    margin-bottom: 800px;
+    margin-bottom: 85vh;
     color: #fff;
     margin-top: inherit;
     font-family: Helvetica, sans-serif;
     font-size: 45px;
+    height: 45px;
 }
 
 textarea {
