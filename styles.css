@@ -25,19 +25,19 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    width: 60vw;
     height: 66%;
     display: flex;
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.75);
     background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-    padding: 20px 92px;
     border-radius: 20px;
     margin-right: 20px;
     position: relative;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     overflow: auto;
+    transform: translateX(-10vw);
     transition: all 0.3s;
 }
 
@@ -223,6 +223,9 @@ input {
     border-radius: 10px;
     box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.3);
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
     margin-bottom: 24px;
     outline: transparent;
@@ -245,13 +248,23 @@ button {
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    background-color: #000ff0;
+    outline: #000ff0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--blue);
+}
+
 .formul {
-    width: 30%;
+    width: 25%;
     height: 65%;
     font-size: 36px;
-    padding: 32px 92px;
+    padding: 12px;
     font-family: Helvetica, sans-serif;
     display: flex;
+    float: left;
     overflow: auto;
     margin-left: 20px;
     justify-content: center;
@@ -261,13 +274,12 @@ button {
 
 form {
     width: 70%;
-    height: 65%;
-    margin: auto;
+    height: 80%;
 }
 
 .formul:hover {
-    width: 35%;
-    height: 75%;
+    width: 28%;
+    height: 70%;
 }
 
 button:focus {
@@ -299,11 +311,13 @@ label {
     color: #fff;
     font-family: Helvetica, sans-serif;
     opacity: 0.50;
+    text-align: center;
 }
 
 #czas {
     margin-bottom: 85vh;
     color: #fff;
+    transform: translateX(1vw);
     margin-top: inherit;
     font-family: Helvetica, sans-serif;
     font-size: 45px;
