@@ -18,7 +18,8 @@ body {
     justify-content: center;
     align-items: center;
     background: var(--green);
-    background: linear-gradient(to right top, var(--dark), var(--blue));
+    background: linear-gradient(to right top, var(--dark), var(--blue)) center;
+    background-size: cover;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
@@ -30,7 +31,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     background: rgba(0, 0, 0, 0.75);
-    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+    background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25)) center;
+    background-size: cover;
     border-radius: 20px;
     margin-right: 20px;
     position: relative;
@@ -145,46 +147,6 @@ main {
 
 section:first-child {
     margin-right: 100px;
-}
-
-.people {
-    height: 100%;
-    display: flex;
-    padding-bottom: 24px;
-}
-
-.person__img {
-    width: 200px;
-    height: 200px;
-    background: var(--green);
-    border: solid 3px #fff;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-.person__img img {
-    width: 100%;
-}
-
-.person__name {
-    display: block;
-    margin-top: 16px;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    background: linear-gradient(90deg, var(--blue), rgba(255, 255, 255, 0.8));
-    color: #fff;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.person:last-child {
-    margin-left: 50px;
-    align-self: flex-end;
-}
-
-.person__img--filip img {
-    transform: translate(10px, -30px);
 }
 
 .mail {
@@ -349,5 +311,75 @@ textarea {
     }
     to {
         transform: rotate(360deg)
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 100vh;
+    }
+    .container.con {
+        padding: 8px;
+        position: absolute;
+        overflow: hidden;
+        top: 20vh;
+        left: 20vw;
+        width: 70vw;
+        height: 50vh;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    h1 {
+        padding: 0;
+        width: 100vw;
+        font-size: 20px;
+    }
+
+    p {
+        padding: 0;
+        flex-wrap: wrap;
+        text-align: justify;
+        width: 62vw;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .container.formul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-size: 20px;
+        position: absolute;
+        top: 80vh;
+        left: 20vw;
+        height: 60vh;
+        width: 70vw;  
+    }
+
+    form {
+        padding: 0;
+        margin: 0;
+        width: 150px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100px;
+        font-size: 12px;
+    }
+    input {
+        width: 150px;
+    }
+    ::placeholder {
+        font-size: 12px;
+    }
+    textarea {
+        width: 150px;
     }
 }
