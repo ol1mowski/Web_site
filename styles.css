@@ -389,6 +389,28 @@ textarea {
     }
 }
 
+@media screen and (max-width: 414px) {
+    .bg__img--button {
+        right: 20%;
+    }
+
+    .bg__img--dots {
+        left: 10%;
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .bg__img--button {
+        right: 20%;
+    }
+
+    .bg__img--dots {
+        left: 10%;
+        height: 20vh;
+    }
+}
+
 
 /*320*/
 @media screen and (max-width: 320px) {
