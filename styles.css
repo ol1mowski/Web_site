@@ -317,6 +317,7 @@ textarea {
 
 @media screen and (max-width: 425px) {
     body {
+        overflow: scroll;
         flex-wrap: wrap;
         height: 100vh;
     }
@@ -387,6 +388,7 @@ textarea {
 
 @media screen and (max-width: 320px) {
     body {
+        overflow: scroll;
         flex-wrap: wrap;
         height: 100vh;
     }
@@ -420,7 +422,6 @@ textarea {
     .container.formul {
         margin: 0;
         padding: 0;
-        overflow: hidden;
         font-size: 20px;
         position: absolute;
         top: 80vh;
