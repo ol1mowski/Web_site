@@ -318,7 +318,6 @@ textarea {
 @media screen and (max-width: 425px) {
     body {
         flex-wrap: wrap;
-        overflow: hidden;
         height: 100vh;
     }
     .container.con {
@@ -326,7 +325,7 @@ textarea {
         position: absolute;
         overflow: hidden;
         top: 20vh;
-        left: 15vw;
+        left: 25vw;
         width: 70vw;
         height: 50vh;
         flex-wrap: wrap;
@@ -355,7 +354,7 @@ textarea {
         font-size: 20px;
         position: absolute;
         top: 80vh;
-        left: 20vw;
+        left: 25vw;
         height: 60vh;
         width: 60vw;
     }
@@ -389,7 +388,6 @@ textarea {
 @media screen and (max-width: 320px) {
     body {
         flex-wrap: wrap;
-        overflow: hidden;
         height: 100vh;
     }
     .container.con {
