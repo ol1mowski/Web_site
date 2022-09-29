@@ -317,6 +317,7 @@ textarea {
 
 @media screen and (max-width: 425px) {
     body {
+        overflow: scroll;
         flex-wrap: wrap;
         height: 100vh;
     }
@@ -444,6 +445,7 @@ textarea {
         font-size: 12px;
     }
     input {
+        height: 3px;
         width: 150px;
     }
     ::placeholder {
@@ -451,5 +453,6 @@ textarea {
     }
     textarea {
         width: 150px;
+        height: 200px;
     }
 }
