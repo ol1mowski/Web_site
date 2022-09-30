@@ -25,21 +25,6 @@ let pokazGodzine = () => {
 pokazGodzine();
 setInterval("pokazGodzine()", 1000);
 
-//FormChecking
-
-let sprawdz = (form) => {
-    if (form.email.value == '') {
-        alert("Pole email nie może być puste!");
-        form.email.focus();
-        return false;
-    }
-    if (form.name.value == '') {
-        alert("Treść nie może być pusta!");
-        form.name.focus();
-        return false;
-    }
-}
-
 //Drak Mode 
 const button_Switch = document.querySelector('button');
 let theme = localStorage.getItem('theme');
