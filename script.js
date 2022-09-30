@@ -1,3 +1,4 @@
+//TimerSettings
 let pokazGodzine = () => {
     let data = new Date();
 
@@ -23,6 +24,8 @@ let pokazGodzine = () => {
 
 pokazGodzine();
 setInterval("pokazGodzine()", 1000);
+
+//FormChecking
 
 let sprawdz = (form) => {
     if (form.email.value == '') {
