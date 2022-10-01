@@ -609,6 +609,30 @@ body.dark ::placeholder {
 }
 
 @media screen and (max-width: 820px) {
+
+    .icon {
+        position: absolute;
+        right: 75px;
+        top: 10px;
+    }
+
+    body.dark .icon {
+        transform: translateX(75px);
+    }
+
+    #czas {
+        position: absolute;
+        left: 10px;
+    }
+
+    .switch {
+        width: 130px;
+    }
+
+    span {
+        font-size: 12px;
+        right: 6px;
+    }
     .bg__img--button {
         right: 30%;
     }
@@ -688,6 +712,32 @@ body.dark ::placeholder {
 }
 
 @media screen and (max-width: 768px) {
+
+    .icon {
+        position: absolute;
+        right: 75px;
+        top: 10px;
+    }
+
+    body.dark .icon {
+        transform: translateX(75px);
+    }
+
+    #czas {
+        position: absolute;
+        left: 10px;
+    }
+
+    .switch {
+        width: 130px;
+    }
+
+    span {
+        font-size: 12px;
+        right: 6px;
+    }
+
+
     .bg__img--button {
         right: 30%;
     }
@@ -766,6 +816,30 @@ body.dark ::placeholder {
 }
 
 @media screen and (max-width: 425px) {
+    .icon {
+        position: absolute;
+        right: 45px;
+        top: 10px;
+    }
+
+    body.dark .icon {
+        transform: translateX(40px);
+    }
+
+    #czas {
+        position: absolute;
+        left: 10px;
+    }
+
+    .switch {
+        width: 100px;
+    }
+
+    span {
+        font-size: 12px;
+        right: 6px;
+    }
+
     .bg__img--button {
         right: 30%;
     }
@@ -842,6 +916,30 @@ body.dark ::placeholder {
 }
 
 @media screen and (max-width: 414px) {
+    .icon {
+        position: absolute;
+        right: 45px;
+        top: 10px;
+    }
+
+    body.dark .icon {
+        transform: translateX(40px);
+    }
+
+    #czas {
+        position: absolute;
+        left: 10px;
+    }
+
+    .switch {
+        width: 100px;
+    }
+
+    span {
+        font-size: 12px;
+        right: 6px;
+    }
+
     .bg__img--button {
         right: 20%;
     }
@@ -853,6 +951,30 @@ body.dark ::placeholder {
 }
 
 @media screen and (max-width: 375px) {
+    .icon {
+        position: absolute;
+        right: 45px;
+        top: 10px;
+    }
+
+    body.dark .icon {
+        transform: translateX(40px);
+    }
+
+    #czas {
+        position: absolute;
+        left: 10px;
+    }
+
+    .switch {
+        width: 100px;
+    }
+
+    span {
+        font-size: 12px;
+        right: 6px;
+    }
+
     .bg__img--button {
         right: 20%;
     }
