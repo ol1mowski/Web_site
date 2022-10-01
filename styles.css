@@ -183,12 +183,11 @@ input {
     align-items: center;
     font-size: 24px;
     margin-bottom: 24px;
-    outline: transparent;
     position: relative;
     transition: background 0.3s ease-out, box-shadow 0.3s ease-out, color 0.3s ease-out, outline 0.3s ease-out;
 }
 
-button {
+.send {
     width: 250px;
     margin-top: 32px;
     padding: 16px 0;
@@ -237,11 +236,11 @@ form {
     height: 70%;
 }
 
-button:focus {
+.send:focus {
     outline-color: #fff;
 }
 
-button:after {
+.send:after {
     width: 50px;
     height: 150%;
     position: absolute;
@@ -253,7 +252,7 @@ button:after {
     transition: transform 0.4s;
 }
 
-button:hover:after {
+.send:hover:after {
     transform: translateX(500px) rotate(20deg);
 }
 
@@ -289,13 +288,66 @@ textarea {
     overflow: hidden;
 }
 
+.icon {
+    border-radius: 100%;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s;
+}
+
+.switch {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 150px;
+    height: 70px;
+    border-radius: 40px;
+    background: linear-gradient(to right top, var(--dark), var(--blue)) center;
+    border: 1px solid var(--color);
+}
+
+span {
+    position: absolute;
+    right: 20px;
+    top: 70px;    
+}
+
+
 /*Dark Mode*/
 
 body.dark {
-    background: linear-gradient(to right top, var(--dark), var(--blue)) center;
+    background: linear-gradient(to right top, var(--white), var(--blue)) center;
     background-size: cover;
 }
 
+body.dark .icon{
+    transform: translateX(90px);
+    background: #ffff00;
+}
+
+body.dark .switch {
+    background: linear-gradient(to right top, var(--white), var(--blue)) center;
+}
+
+body.dark textarea {
+    background: linear-gradient(to right top, var(--white), var(--blue)) center;
+}
+
+body.dark .send {
+    background: linear-gradient(to right top, var(--white), var(--blue)) center;
+}
+
+body.dark input {
+    background: linear-gradient(to right top, var(--white), var(--blue)) center;
+}
+
+body.dark ::placeholder {
+    opacity: 1;
+}
+
+
+/*Animatoion*/
 @keyframes slideDown {
     from {
         transform: translateY(-30vh)
@@ -314,6 +366,8 @@ body.dark {
     }
 }
 
+
+/*Media Query*/
 @media screen and (max-width: 1920px) {
     .container.formul {
         height: 50vh;
@@ -386,7 +440,7 @@ body.dark {
         font-size: 37px;
     }
 
-    button {
+    .send {
         width: 150px;
         height: 60px;
         font-size: 24px;
@@ -458,7 +512,7 @@ body.dark {
         font-size: 37px;
     }
 
-    button {
+    .send {
         width: 150px;
         height: 60px;
         font-size: 24px;
@@ -535,7 +589,7 @@ body.dark {
         font-size: 37px;
     }
 
-    button {
+    .send {
         width: 150px;
         height: 60px;
         font-size: 24px;
@@ -614,7 +668,7 @@ body.dark {
         font-size: 30px;
     }
 
-    button {
+    .send {
         width: 100px;
         height: 40px;
         font-size: 16px;
@@ -692,7 +746,7 @@ body.dark {
         font-size: 20px;
     }
 
-    button {
+    .send {
         width: 100px;
         height: 40px;
         font-size: 12px;
@@ -769,7 +823,7 @@ body.dark {
         font-size: 20px;
     }
 
-    button {
+    .send {
         width: 100px;
         height: 40px;
         font-size: 12px;
@@ -812,6 +866,31 @@ body.dark {
 
 /*320*/
 @media screen and (max-width: 320px) {
+
+    .icon {
+        position: absolute;
+        right: 45px;
+        top: 10px;
+    }
+
+    body.dark .icon {
+        transform: translateX(40px);
+    }
+
+    #czas {
+        position: absolute;
+        left: 10px;
+    }
+
+    .switch {
+        width: 100px;
+    }
+
+    span {
+        font-size: 12px;
+        right: 6px;
+    }
+
     body {
         overflow: scroll;
         flex-wrap: wrap;
@@ -874,7 +953,7 @@ body.dark {
         font-size: 20px;
     }
 
-    button {
+    .send {
         height: 50px;
         width: 100px;
         font-size: 12px;
