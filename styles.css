@@ -463,8 +463,10 @@ body.dark ::placeholder {
     }
 
     .bg__img--dots {
-        left: 30%;
-        height: 50vh;
+        top: 23vh;
+        left: 19vw;
+        width: 50vw;
+        height: 70vh;
     }
     .container.con {
         padding: 0;
@@ -473,7 +475,7 @@ body.dark ::placeholder {
         left: 150px;
         flex-wrap: wrap;
         width: 55vw;
-        height: 40vh;
+        height: 25vh;
         overflow: hidden;
     }
     .container.formul {
@@ -481,7 +483,7 @@ body.dark ::placeholder {
         margin: 0;
         right: 0;
         width: 27vw;
-        height: 50vh;
+        height: 57vh;
         padding: 0;
     }
 
@@ -533,10 +535,11 @@ body.dark ::placeholder {
     .bg__img--button {
         right: 30%;
     }
-
     .bg__img--dots {
-        left: 30%;
-        height: 50vh;
+        top: 23vh;
+        left: 2vw;
+        width: 90vw;
+        height: 60vh;
     }
 
     .container.con {
@@ -616,7 +619,7 @@ body.dark ::placeholder {
     }
 
     body.dark .icon {
-        transform: translateX(75px);
+        transform: translateX(70px);
     }
 
     #czas {
@@ -630,15 +633,16 @@ body.dark ::placeholder {
 
     span {
         font-size: 12px;
-        right: 6px;
+        right: 2.5vw;
     }
     .bg__img--button {
         right: 30%;
     }
-
     .bg__img--dots {
-        left: 30%;
-        height: 50vh;
+        top: 23vh;
+        left: 2vw;
+        width: 90vw;
+        height: 40vh;
     }
 
     .container.con {
@@ -677,14 +681,13 @@ body.dark ::placeholder {
         position: absolute;
         top: 50vh;
         left: 40vw;
-        height: 30vh;
+        height: 40vh;
         width: 40vw;
     }
 
     form {
-        padding: 0;
-        margin: 0;
-        width: 150px;
+        position: absolute;
+        left: 9.7vw;
     }
 
     label {
@@ -692,9 +695,12 @@ body.dark ::placeholder {
     }
 
     .send {
-        width: 100px;
-        height: 40px;
+        width: 120px;
+        height: 60px;
         font-size: 16px;
+        position: absolute;
+        left: 1.8vw;
+        top: 23vh;
     }
     input {
         width: 200px;
@@ -704,8 +710,8 @@ body.dark ::placeholder {
         font-size: 18px;
     }
     textarea {
-        width: 150px;
-        height: 50px;
+        width: 170px;
+        height: 70px;
     }
     
 }
@@ -735,17 +741,12 @@ body.dark ::placeholder {
         font-size: 12px;
         right: 6px;
     }
-
-
-    .bg__img--button {
-        right: 30%;
-    }
-
     .bg__img--dots {
-        left: 30%;
-        height: 50vh;
+        top: 23vh;
+        left: 18vw;
+        width: 60vw;
+        height: 60vh;
     }
-
     .container.con {
         padding: 8px;
         position: absolute;
@@ -753,7 +754,7 @@ body.dark ::placeholder {
         top: 20vh;
         left: 25vw;
         width: 65vw;
-        height: 20vh;
+        height: 14vh;
         flex-wrap: wrap;
         text-align: center;
     }
@@ -781,11 +782,12 @@ body.dark ::placeholder {
         position: absolute;
         top: 45vh;
         left: 40vw;
-        height: 45vh;
+        height: 40vh;
         width: 30vw;
     }
 
     form {
+        left: 5vw;
         padding: 0;
         margin: 0;
         width: 150px;
@@ -796,6 +798,10 @@ body.dark ::placeholder {
     }
 
     .send {
+        position: absolute;
+        top: 30vh;
+        left: 3vw;
+        top: 25vh;
         width: 100px;
         height: 40px;
         font-size: 12px;
@@ -843,10 +849,6 @@ body.dark ::placeholder {
         right: 30%;
     }
 
-    .bg__img--dots {
-        left: 10%;
-        height: 50vh;
-    }
     .container.con {
         padding: 8px;
         position: absolute;
@@ -912,6 +914,36 @@ body.dark ::placeholder {
         width: 150px;
         height: 50px;
     }
+    .bg__img--button {
+        right: 20vw;
+    }
+
+    .bg__img--dots {
+        top: 23vh;
+        left: 2vw;
+        width: 90vw;
+        height: 40vh;
+    }
+    .container.con {
+        top: 17vh;
+        height: 20vh;
+    }
+    .container.formul {
+        top: 43vh;
+        height: 37vh;
+    }
+    form {
+        position: absolute;
+        left: 13vw;
+    }
+    body {
+        overflow: hidden;
+    }
+    .send {
+        position: absolute;
+        left: 4vw;
+        top: 23.5vh;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -927,7 +959,7 @@ body.dark ::placeholder {
 
     #czas {
         position: absolute;
-        left: 10px;
+        left: 4vw;
     }
 
     .switch {
@@ -936,16 +968,39 @@ body.dark ::placeholder {
 
     span {
         font-size: 12px;
-        right: 6px;
+        right: 2vw;
     }
 
     .bg__img--button {
-        right: 20%;
+        right: 20vw;
     }
 
+
     .bg__img--dots {
-        left: 10%;
+        top: 23vh;
+        left: 2vw;
+        width: 90vw;
         height: 40vh;
+    }
+    .container.con {
+        top: 17vh;
+        height: 20vh;
+    }
+    .container.formul {
+        top: 43vh;
+        height: 40vh;
+    }
+    form {
+        position: absolute;
+        left: 13vw;
+    }
+    body {
+        overflow: hidden;
+    }
+    .send {
+        position: absolute;
+        left: 4vw;
+        top: 23.5vh;
     }
 }
 
@@ -962,7 +1017,7 @@ body.dark ::placeholder {
 
     #czas {
         position: absolute;
-        left: 10px;
+        left: 4vw;
     }
 
     .switch {
@@ -971,16 +1026,36 @@ body.dark ::placeholder {
 
     span {
         font-size: 12px;
-        right: 6px;
+        right: 2vw;
     }
 
     .bg__img--button {
-        right: 20%;
+        right: 20vw;
     }
 
     .bg__img--dots {
-        left: 10%;
+        top: 23vh;
+        left: 2vw;
+        width: 90vw;
         height: 40vh;
+    }
+    .container.con {
+        top: 17vh;
+    }
+    .container.formul {
+        top: 41vh;
+    }
+    form {
+        position: absolute;
+        left: 13vw;
+    }
+    body {
+        overflow: hidden;
+    }
+    .send {
+        position: absolute;
+        left: 4vw;
+        top: 23.5vh;
     }
 }
 
