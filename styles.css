@@ -988,7 +988,7 @@ body.dark ::placeholder {
     }
     .container.formul {
         top: 43vh;
-        height: 40vh;
+        height: 45vh;
     }
     form {
         position: absolute;
@@ -1000,7 +1000,7 @@ body.dark ::placeholder {
     .send {
         position: absolute;
         left: 4vw;
-        top: 23.5vh;
+        top: 27.5vh;
     }
 }
 
