@@ -44,6 +44,7 @@ body {
 }
 
 .con {
+    word-wrap: break-word;
     max-width: 920px;
     height: 66%;
     display: flex;
